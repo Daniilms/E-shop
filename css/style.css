@@ -28,37 +28,21 @@ body {
 .header__logo {
     margin: 0 41px 0 0;
 }
-
 .header__menu-list {
     display: flex;
     align-items: center;
 }
-
 .header__burger {
     border: none;
     background-color: transparent;
+    position: relative;
 }
-.header__burger-button{
-    fill:none;
-    background: none;
-}
-.nav-nav{
-    display: none;
-    background: #F18B99;
-    color: #9F9F9F;
-}
-.header__burger-button:hover + .nav-nav,
-.header__burger-button:focus + .nav-nav{
-    display: block;
-}
-
 .header__link {
     margin: 0 0 0 33px;
 }
-
-.header__nav {
+.header__nav{
     display: none;
-}
+}   
 .brand{
     display: flex;
 }
@@ -79,18 +63,15 @@ body {
     line-height: 58px;
     text-transform: uppercase;
 }
-
 .brand__title-lower {
     font-size: 32px;
     font-weight: 700;
     line-height: 38px;
     display: block;
 }
-
 .brand__title-pink {
     color: var(--pink-color);
 }
-
 .middle-content__title{
     font-weight: 400;
     font-size: 30px;
@@ -118,6 +99,43 @@ body {
 } 
 .popular__list-item{
     background-color: #F8F8F8;
+    position: relative;
+}
+.overlay__list-item{
+    transition: 0.5s;
+}
+.card-div{
+    position: absolute;
+    opacity: 0;
+    left:80px;
+    top:30%;
+}
+.list-item__button{
+    border: 1px solid #F16D7F;
+    background-color: #F18B99;
+    width: 200px;
+    height: 80px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #F8F8F8;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+}
+.overlay::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+.popular__list-item:hover .card-div{
+    opacity: 1;
+}
+.popular__list-item:hover{
+    background-color:#F8F8F8;
+    opacity: 0.5;
+    transition: 0.5;
+    filter: blur(1px);
+    position: relative;
 }
 .list-item__header{
     font-family: 'Lato';
@@ -342,23 +360,22 @@ body {
     line-height: 19px;
     color: #FBFBFB;
 }
+.lupe__button{
+    border: none;
+    background-color: #222224;
+}
 .lupe{
     text-decoration: none;
-    color:white;
+    fill: #9F9F9F;
 }
-.lupe:hover,
-.lupe:focus {
-    fill:#F16D7F;
-    opacity: 0.4;
-    transition: 0.3s;
-}
-.lupe:active{
-    fill: lightseagreen;
-    color:blueviolet;
-}
-.popular__list-item:hover{
+.lupe :hover {
+    fill: #F18B99;
     opacity: 0.5;
-    transition: 0.4s;
+    cursor:pointer;
 }
-
+.lupe:focus{
+    fill: #F18B99;
+    opacity: 0.5;
+    cursor:pointer; 
+}
 
