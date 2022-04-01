@@ -32,6 +32,11 @@ body {
     display: flex;
     align-items: center;
 }
+.header__menu-list-nav-wrp{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
 .header__burger {
     border: none;
     background-color: transparent;
@@ -42,7 +47,40 @@ body {
 }
 .header__nav{
     display: none;
+    position: absolute;
+    left:150px;
+    top:60px;
+    background-color: #FFFFFF;
+    width:232px;
+    height: 764px;
 }   
+.header__nav-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+    margin:37px 0 24px 34px;
+}
+.nav-item__title{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    padding:11px 0 0 33px;
+}
+.nav-item__item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding:11px 0 0 54px;
+}
+.header__nav-list{
+    padding:0 0 0 12px;
+}
+.show {display: block;}
 .brand{
     display: flex;
 }
@@ -113,15 +151,14 @@ body {
     right: 0;
     bottom: 0;
     position: absolute;
-    opacity: 0.6;
-    display: none;
+    opacity: 0;
 }
 .list-item__button{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%);
-    display: none;
+    opacity: 0;
     width:200px;
     height:40px;
     background-color: #F8F8F8;
@@ -131,9 +168,14 @@ body {
     font-style: normal;
     font-weight: 700;
 }
-.popular__list-item:hover .popular__list-item-wrp::before,
+.popular__list-item:hover .popular__list-item-wrp::before{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: .5s;
+}
 .popular__list-item:hover .list-item__button{
-    display: block;
+    opacity: 1;
+    cursor: pointer;
 }
 .list-item__header{
     font-family: 'Lato';
@@ -375,17 +417,20 @@ body {
     fill: #F18B99;
     cursor: pointer;
     opacity: 0.4;
+    transition: .5s;
 }
 .link-logo__img{
     padding: 0 7px 0 0;
     fill: #F18B99;
 }
-.end-link__logo:hover .logo__img-path{
+.end-link__logo:hover .logo__img-path,
+.end-link__logo:focus .logo__img-path {
     fill: #F16D7F;
     cursor: pointer;
     transition: 0.2s;
 }
-.end-link__logo:hover .link-logo__img{
+.end-link__logo:hover .link-logo__img,
+.end-link__logo:focus .logo__img-path {
     fill: #0d9ddb;
     cursor: pointer;
     transition: 0.2s;
