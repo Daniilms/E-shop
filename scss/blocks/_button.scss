@@ -1,0 +1,72 @@
+.popular__browse-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px; 
+}
+.browse__button-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-align: center;
+    border: 1px solid #FF6A6A;
+    padding: 15px 38px;
+    margin:63px 0 0 0;
+    text-decoration: none;
+}
+.browse__button-text:hover,
+.browse__button-text:focus {
+    background-color: #F16D7F;
+    opacity: 0,4;
+    color: #FBFBFB;
+    transition: 0.5s;
+}
+.begin-form__button{
+    margin:10px 0 0 0;
+}
+.begin-form__button:hover,
+.begin-form__button:focus,
+.begin-form__button:active{
+    color: #6F6E6E;
+    cursor: pointer;
+}
+.registration__button{
+    display: flex;
+    align-items: center;
+    margin:40px 0 96px 0;
+    width: 167px;
+    height: 50px;
+
+}
+.registration__button-button{
+    background-color:#F16D7F;
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    padding:17px 66px 17px 30px;
+}
+.registration__button:hover .registration__button-button,
+.registration__button:focus .registration__button-button {
+    background-color: #ffffff;
+    color: #F16D7F;
+    cursor: pointer;
+    transition: .5s;
+    border: 1px solid #6F6E6E;
+}
+.registration__button:hover .registration_button-vector,
+.registration__button:focus .registration_button-vector {
+    fill: #F16D7F;
+    cursor: pointer;
+    transition: .5s;
+}
+.registration_button-vector{
+    fill: #ffffff;
+    position: absolute;
+    padding-left: 130px;
+    padding-right: 24px;
+}
