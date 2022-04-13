@@ -1,0 +1,28 @@
+.input{
+    width: 360px;
+    height: 45px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    border: 1px solid #A4A4A4;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 16px;
+}
+.input:hover,
+.input:focus,
+.input:active{
+    color:$gray-op;
+    background-color:$extra-pink;
+    transition: .3s;
+}
+.registration__input-title{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $footer-bkg;
+    margin:35px 0 0 0;
+}
+.registration__input-title:first-child{
+    margin:64px 0 0 0;
+}

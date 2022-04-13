@@ -3,11 +3,27 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 65px;
+    @include tablet{
+        justify-content: space-evenly;
+    }
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .sales__item {
     height: 260px;
     width: 360px;
-    background-color: var(--sales-bkg);
+    background-color: $sales-bkg;
+    @include tablet{
+        width: 30%;
+        height: 167.62px;
+    }
+    @include mobile{
+        width:91%;
+        height: 247px;
+        margin-bottom: 32px;
+    }
 }
 .sales__item--woman {
     display: flex;
@@ -15,6 +31,9 @@
     justify-content: center;
     flex-direction: column;
     background-image: url(../img/for-women.jpg);
+    @include tablet{
+        background-position: inherit;
+    }
 }
 .sales__item--man{
     display: flex;
@@ -29,6 +48,9 @@
     justify-content: center;
     flex-direction: column;
     background-image: url(../img/for-kids.jpg);
+    @include tablet{
+        background-position: inherit;
+    }
 }
 .sales__item--accesories {
     display: flex;
@@ -38,6 +60,15 @@
     margin:30px 0 0 0;
     width: 100%;
     background-image: url(../img/accesories.jpg);
+    @include tablet{
+        width: 95%;
+        height: 116.04px;
+    }
+    @include mobile{
+        width:91%;
+        height: 111px;
+        margin:0 0 0 0;
+    }
 }
 .sales__item-text{
     text-transform: uppercase;

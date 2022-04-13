@@ -7,12 +7,26 @@
     justify-content: space-between;
     align-items: center;
 }
+.header__container{
+    @include tablet{
+        margin-left: 18px;
+    }
+    @include mobile{
+        margin-left: 16px;
+    }
+}
 .header__logo {
     margin: 0 41px 0 0;
 }
 .header__menu-list {
     display: flex;
     align-items: center;
+    @include tablet{
+        margin-right: 18px;
+    }
+    @include mobile{
+        margin-right: 0;
+    }
 }
 .header__menu-list-nav-wrp{
     display: flex;
@@ -23,12 +37,25 @@
     border: none;
     background-color: transparent;
     position: relative;
+    @include mobile{
+        margin-right: 16px;
+    }
 }
 .header__link {
     margin: 0 0 0 33px;
 }
 .header__icon{
     fill: #9F9F9F;
+}
+.reg{
+    @include mobile{
+        display: none;
+    }
+}
+.cart{
+    @include mobile{
+        display: none;
+    }
 }
 .header__loupe:hover .header__icon,
 .header__burger:hover .header__icon,

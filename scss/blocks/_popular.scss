@@ -1,37 +1,27 @@
-.middle-content__title{
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    color: #222222;
-}
-.popular__middle-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin:96px 0 0 0;
-}
-.middle-content__text{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #9F9F9F;
-}
 .popular__list{
     display: grid;
     gap:30px;
     grid-template-columns: 1fr 1fr 1fr;
     margin:48px 0 0 0;
+    @include tablet{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 } 
 .popular__list-item{
-    background-color: #F8F8F8;
+    background-color: $gray-op;
+    width: 360px;
+    @include tablet{
+        height: 581px;
+    }
 }
 .popular__list-item-wrp{
     position: relative;
 }
 .popular__list-item-wrp::before{
     content: '';
-    background-color: #222222;
+    background-color: $black-bkg;
     top: 0;
     left: 0;
     right: 0;
@@ -47,8 +37,8 @@
     opacity: 0;
     width:200px;
     height:40px;
-    background-color: #F8F8F8;
-    border:2px solid #9F9F9F ;
+    background-color: $gray-op;
+    border:2px solid $dark-gray-op ;
     font-size: 20px;
     line-height: 20px;
     font-style: normal;
@@ -67,7 +57,7 @@
 .popular__list-item:focus .list-item__button{
     opacity: 0.7;
     cursor: pointer;
-    background-color: #F16D7F;
+    background-color: $extra-pink;
 }
 .list-item__header{
     font-family: 'Lato';
@@ -75,7 +65,7 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    color: #000000;
+    color: $black;
     text-transform: uppercase;
     padding:25px 0 0 18px;
 }
@@ -83,14 +73,14 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    color: #5D5D5D;
+    color: $dark-gray-op;
     padding: 12px 28px 0 18px;
 }
 .list-item__price{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #F16D7F; 
+    color: $extra-pink; 
     padding: 18px 0 20px 18px;
 }
 

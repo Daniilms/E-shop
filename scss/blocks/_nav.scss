@@ -3,7 +3,7 @@
     position: absolute;
     left:150px;
     top:60px;
-    background-color: #FFFFFF;
+    background-color: $white-bkg;
     width:232px;
     height: 764px;
 }   
@@ -11,7 +11,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: $black;
     text-transform: uppercase;
     margin:37px 0 24px 34px;
 }
@@ -19,7 +19,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #F16D7F;
+    color: $extra-pink;
     text-transform: uppercase;
     padding:11px 0 0 33px;
 }
@@ -27,14 +27,14 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #6F6E6E;
+    color: $dark-gray-op;
     padding:11px 0 0 54px;
 }
 .nav-item__item:hover,
 .nav-item__item:focus,
 .nav-item__item:active {
     text-decoration: underline;
-    color: #F18B99;
+    color: $pink-color;
     cursor: pointer;
 }
 .header__nav-list{
