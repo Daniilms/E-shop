@@ -16,7 +16,7 @@
         "blocks/_nav.scss",
         "blocks/_popular.scss",
         "blocks/_sales.scss",
-        "blocks/_registrationForm.scss",
+        "blocks/_registration.scss",
         "blocks/_decoration.scss",
         "blocks/_cart.scss",
         "blocks/_input.scss"
