@@ -894,6 +894,8 @@ body {
   .sales__item {
     width: 30%;
     height: 167.62px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -902,6 +904,8 @@ body {
     width: 91%;
     height: 247px;
     margin-bottom: 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -916,6 +920,8 @@ body {
 @media (max-width: 1599px) {
   .sales__item--woman {
     background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -925,6 +931,14 @@ body {
   justify-content: center;
   flex-direction: column;
   background-image: url(../img/for-men.jpg);
+}
+
+@media (max-width: 1599px) {
+  .sales__item--man {
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .sales__item--kids {
@@ -938,6 +952,8 @@ body {
 @media (max-width: 1599px) {
   .sales__item--kids {
     background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -955,6 +971,9 @@ body {
   .sales__item--accesories {
     width: 95%;
     height: 116.04px;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -963,6 +982,9 @@ body {
     width: 91%;
     height: 111px;
     margin: 0 0 0 0;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
