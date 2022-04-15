@@ -2,17 +2,22 @@
     display: flex;
     justify-content: space-around;
     background-image: url(../img/footer-photo.jpg);
-    min-height:448px;
+    background-size: 100%;
+    min-height: 448px;
     align-items: center;
+    @include tablet{
+        flex-direction: column;
+        background-size: cover;
+    }
 }
 .footer__begin-form-input{
     display: flex;
     margin:32px 0 0 0;
 }
-.begin__form-input{
+.footer__begin-form-input-email{
     display: flex;
     align-items: center;
-    background: #E1E1E1;
+    background: $gray-op;
     width: 256px;
     height: 50px;
     border-radius: 20px 0 0 20px;
@@ -22,19 +27,22 @@
     line-height: 17px;
     display: flex;
     align-items: center;
-    color: #222224;
+    color: $footer-bkg;
     opacity: 0.67;
     padding-left: 22px;
     margin-left: 40px;
+    @include mobile{
+        margin-left: 0;
+    }
 }
 .begin__form-input:hover,
 .begin__form-input:focus,
 .begin__form-input:active{
-    color: #F16D7F;
+    color: $extra-pink;
     opacity: 0.7;
 }
-.begin__form-button{
-    background: #F16D7F;
+.footer__begin-form-button{
+    background: $extra-pink;
     width: 100px;
     height: 50px;
     right: 300px;
@@ -44,7 +52,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
+    color: $white-bkg;
 }
 .footer__begin-description{
     display: flex;
@@ -52,6 +60,14 @@
     align-items: center;
     text-align: center;
     width: 360px;
+    @include tablet{
+        margin-bottom: 48px;
+        margin-top: 53px;
+    }
+    @include mobile{
+        margin-bottom: 59px;
+        margin-top: 53px;
+    }
 }
 .begin-description__text{
     min-width: 359px;
@@ -59,7 +75,12 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #222224;
+    color: $footer-bkg;
+    @include mobile{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    }
 
 }
 .footer__begin-form{
@@ -67,23 +88,33 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    @include tablet{
+        margin-bottom: 140px;
+    }
+    @include mobile{
+        margin-bottom: 109px;
+    }
 }
-.begin-form__header{
+.begin-form__footer{
     font-weight: 700;
     font-size: 24px;
     line-height: 167.2%;
     text-align: center;
-    color: #222224;
+    color: $footer-bkg;
     text-transform: uppercase;
 }
-.begin-form__text{
+.begin-text__footer{
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    color: #222224;
+    color: $footer-bkg;
     margin:0 0 0 32px;
     text-transform: uppercase;
+    @include mobile{
+        font-size: 14px;
+        margin: 0 0 0 0;
+    }
 }
 .footer__end{
     display: flex;
@@ -91,17 +122,34 @@
     align-items: center;
     background-color:$footer-bkg;
     min-height:71px;
+    @include mobile{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 .footer__end-link{
     display: flex;
     margin:0 230px 0 0;
+    @include tablet{
+        margin:0 40px 0 0;
+    }
+    @include mobile{
+        margin: 43px 0 0 0;
+    }
 }
 .footer__end-rights{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #FBFBFB;
+    color: $gray-op;
     margin: 0 0 0 230px;
+    @include tablet{
+        margin:0 0 0 32px;
+    }
+    @include mobile{
+        margin: 48px 0 9px 0;
+    }
+
 }
 .link-logo__img{
     padding: 0 7px 0 0;

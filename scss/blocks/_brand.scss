@@ -1,24 +1,49 @@
 .brand{
     display: flex;
 }
-.brand__img {
-    width: 800px;
+.brand-img {
+    width: 50%;
     height: 765px;
+    @include tablet{
+        height: 100%;
+    }
+    @include mobile{
+        display: none;
+    }
 }
 .brand__title-wrp{
     display: flex;
     flex-grow: 1;
-    padding: 0 0 0 92px;
+    padding-left:40px;
     align-items: center;
     background-color: $pink-bkg;
+    @include tablet{
+        width: 384.79px;
+        padding: 0 0 0 40px;
+    }
+    @include mobile{
+        height: 363px;
+        align-items: center;
+        padding-left: 56px;
+        padding-right: 56px;
+    }
 }
 .brand__title {
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
-    border-left: 12px solid #F16D7F;
+    border-left: 12px solid $extra-pink;
     padding:0 0 0 16px;
+    @include tablet {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 53px;
+    }
+    @include mobile{
+        font-size: 38px;
+    line-height: 46px;
+    }
 }
 .brand__title-lower {
     font-size: 32px;
@@ -27,5 +52,5 @@
     display: block;
 }
 .brand__title-pink {
-    color: var(--pink-color);
+    color: $pink-color;
 }

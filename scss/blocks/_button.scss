@@ -70,3 +70,50 @@
     padding-left: 130px;
     padding-right: 24px;
 }
+.cart__main-link{
+    display: flex;
+    justify-content: space-between;
+    margin: 72px 0 0 0;
+}
+.cart__button{
+    border: 1px solid #A4A4A4;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+}
+.cart__button:hover .cart__button-text{
+    background-color: $sales-bkg;
+    color: $white-bkg;
+    transition: .5s;
+}
+.cart__button-text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black-bkg;
+    padding: 16px 40px;
+    text-transform: uppercase;
+}
+.cart__main-form-button{
+    margin: 24px 0 0 0;
+    border: none;
+    width: 101px;
+    height: 35px;
+    text-decoration: none;
+}
+.cart__main-form-text{
+    padding: 10px 15px;
+    border: 1px solid $dark-gray-op;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: $black-bkg;
+    text-transform: uppercase;
+    width: 72px;
+    height: 13px;
+}
+.cart__main-form-button:hover .cart__main-form-text{
+    background-color: $sales-bkg;
+    color: $white-bkg;
+    transition: .5s;
+}
