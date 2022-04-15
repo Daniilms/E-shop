@@ -1424,12 +1424,12 @@ body {
 }
 
 .choice__dropdowns-text::after {
-  content: url(/img/choice-vector.svg);
+  content: url(../img/choice-vector.svg);
   padding-left: 9px;
 }
 
 .choice__link::before {
-  content: url(/img/choice-cart-svg.svg);
+  content: url(../img/choice-cart-svg.svg);
   padding-right: 22px;
 }
 
@@ -1504,13 +1504,13 @@ body {
 }
 
 .catalog__pagination-links::before {
-  content: url(/img/catalog-left-arrow.svg);
+  content: url(../img/catalog-left-arrow.svg);
   padding-left: 15px;
   padding-right: 17px;
 }
 
 .catalog__pagination-links::after {
-  content: url(/img/catalog-right-arrow.svg);
+  content: url(../img/catalog-right-arrow.svg);
   padding-right: 15px;
   padding-left: 17px;
 }

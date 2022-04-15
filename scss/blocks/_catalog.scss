@@ -15,12 +15,12 @@
     }
 }
 .catalog__pagination-links::before{
-    content: url(/img/catalog-left-arrow.svg);
+    content: url(../img/catalog-left-arrow.svg);
     padding-left: 15px;
     padding-right: 17px;
 }
 .catalog__pagination-links::after{
-    content: url(/img/catalog-right-arrow.svg);
+    content: url(../img/catalog-right-arrow.svg);
     padding-right: 15px;
     padding-left: 17px;
 }
