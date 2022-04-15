@@ -4,7 +4,7 @@
 .brand-img {
     width: 50%;
     height: 765px;
-    @include tablet{
+    @include tablet {
         height: 100%;
     }
     @include mobile{
@@ -17,7 +17,7 @@
     padding-left:40px;
     align-items: center;
     background-color: $pink-bkg;
-    @include tablet{
+    @include tablet {
         width: 384.79px;
         padding: 0 0 0 40px;
     }
@@ -36,9 +36,9 @@
     border-left: 12px solid $extra-pink;
     padding:0 0 0 16px;
     @include tablet {
-            font-weight: 900;
-            font-size: 44px;
-            line-height: 53px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 53px;
     }
     @include mobile{
         font-size: 38px;

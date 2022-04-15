@@ -155,14 +155,14 @@
     padding: 0 7px 0 0;
     fill: #F18B99;
 }
-.end-link__logo:hover .logo__img-path,
-.end-link__logo:focus .logo__img-path {
+.footer__end-link-logo:hover .logo__img-path,
+.footer__end-link-logo:focus .logo__img-path {
     fill: #F16D7F;
     cursor: pointer;
     transition: 0.2s;
 }
-.end-link__logo:hover .link-logo__img,
-.end-link__logo:focus .logo__img-path {
+.footer__end-link-logo:hover .link-logo__img,
+.footer__end-link-logo:focus .logo__img-path {
     fill: #0d9ddb;
     cursor: pointer;
     transition: 0.2s;

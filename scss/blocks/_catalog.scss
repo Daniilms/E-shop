@@ -1,0 +1,30 @@
+.catalog__links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $dark-gray-op;
+    width: 284px;
+    background-color: $gray-op;
+    margin-left: 500px;
+    margin-top: 48px;
+    margin-bottom: 96px;
+}
+.catalog__links::before{
+    content: url(/img/catalog-left-arrow.svg);
+    padding-left: 15px;
+    padding-right: 17px;
+}
+.catalog__links::after{
+    content: url(/img/catalog-right-arrow.svg);
+    padding-right: 15px;
+    padding-left: 17px;
+}
+.catalog__links-text:last-child{
+    padding:12px 0 12px 0;
+}
+.catalog__links-text{
+    text-decoration: none;
+    text-decoration: none;
+    color: $dark-gray-op;
+    padding: 12px 17px 12px 0px;
+}

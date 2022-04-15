@@ -1,0 +1,96 @@
+.choice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white-bkg;
+    width: 72%;
+    margin-top: -50px;
+}
+.choice__description{
+    width: 641px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid $dark-gray-op;
+    padding-bottom: 65px;
+    @include mobile{
+        width: 326px;
+    }
+}
+.choice__description-selector{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $extra-pink;
+    text-transform: uppercase;
+    border-bottom: 3px solid $extra-pink;
+    padding-bottom: 12px;
+    margin-top: 64px;
+}
+.choice__description-title{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: $dark-gray-op;
+    margin-top: 12px;
+}
+.choice__description-text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $dark-gray-op;
+    max-width: 555px;
+    margin-top: 48px;
+    @include mobile{
+        line-height: 143.1%;
+        width: 326px;
+    }
+}
+.choice__description-price{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $extra-pink;
+    margin-top: 32px;
+}
+.choice__dropdowns{
+    display: flex;
+    margin-top: 65px;
+}
+.choice__dropdowns-text{
+    margin-left: 22px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+.choice__dropdowns-text:first-child{
+    margin-left: 0;
+}
+.choice__dropdowns-text::after{
+    content: url(/img/choice-vector.svg);
+    padding-left: 9px;
+}
+.choice__link::before{
+    content: url(/img/choice-cart-svg.svg);
+    padding-right: 22px;
+}
+.choice__link{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid $extra-pink;
+    background-color: $white-bkg;
+    color: $extra-pink;
+    padding: 14px 56px 14px 23px;
+    text-decoration: none;
+}
+.choice__link:hover{
+    background-color: $extra-pink;
+    color: $white-bkg;
+    transition: .4s;
+    cursor: pointer;
+}

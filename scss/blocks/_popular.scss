@@ -83,4 +83,39 @@
     color: $extra-pink; 
     padding: 18px 0 20px 18px;
 }
-
+.popular__catalog-selectors{
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    margin-top: 51px;
+}
+.popular__catalog-dropdowns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popular__catalog-title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+    text-transform: uppercase;
+}
+.popular__catalog-title::after{
+    content: url(/img/filter.svg);
+    padding-left: 11px;
+    margin-right: 400px;
+}
+.popular__catalog-filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popular__list-item-extra{
+    @include tablet {
+        display: none;
+    }
+}
+.popular__middle-content-link{
+    text-decoration: none;
+}

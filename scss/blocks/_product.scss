@@ -1,0 +1,23 @@
+.product__list{
+    margin-bottom: 128px;
+    justify-content: center;
+}
+.product__list-item--women{
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: block;
+    }
+}
+.product__decoration{
+    display: flex;
+    justify-content: space-between;
+    @include mobile{
+        flex-direction: column;
+    }
+}
+.product__decoration-link-black{
+    color: $black;
+    opacity: 0.3;
+}
