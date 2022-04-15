@@ -86,8 +86,11 @@
 .popular__catalog-selectors{
     display: flex;
     align-items: center;
-    margin-left: 35px;
     margin-top: 51px;
+    width: 72%;
+    @include tablet{
+        width: 95%;
+    }
 }
 .popular__catalog-dropdowns{
     display: flex;
@@ -109,7 +112,6 @@
 .popular__catalog-filter{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .popular__list-item-extra{
     @include tablet {
