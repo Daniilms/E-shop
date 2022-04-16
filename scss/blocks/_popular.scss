@@ -68,12 +68,12 @@
     opacity: 0.5;
     transition: .5s;
 }
-.popular__list-item:hover .list-item__button{
+.popular__list-item:hover .popular__list-item-button{
     opacity: 1;
     cursor: pointer;
 }
-.popular__list-item:active .list-item__button,
-.popular__list-item:focus .list-item__button{
+.popular__list-item:active .popular__list-item-button,
+.popular__list-item:focus .popular__list-item-button{
     opacity: 0.7;
     cursor: pointer;
     background-color: $extra-pink;
