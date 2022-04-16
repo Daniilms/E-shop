@@ -1,10 +1,10 @@
-.popular__browse-button{
+.popular__button{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 47px; 
 }
-.browse__button-text{
+.popular__button-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -15,19 +15,19 @@
     margin:63px 0 0 0;
     text-decoration: none;
 }
-.browse__button-text:hover,
-.browse__button-text:focus {
+.popular__button-text:hover,
+.popular__button-text:focus {
     background-color: #F16D7F;
     opacity: 0,4;
     color: #FBFBFB;
     transition: 0.5s;
 }
-.begin-form__button{
+/* .footer__form-button{
     margin:10px 0 0 0;
-}
-.begin-form__button:hover,
-.begin-form__button:focus,
-.begin-form__button:active{
+} */
+.footer__form-button:hover,
+.footer__form-button:focus,
+.footer__form-button:active{
     color: #6F6E6E;
     cursor: pointer;
 }

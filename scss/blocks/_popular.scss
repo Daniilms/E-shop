@@ -9,12 +9,31 @@
         flex-wrap: wrap;
     }
 } 
+.popular__middle-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:96px 0 0 0;
+}
 .popular__list-item{
     background-color: $gray-op;
     width: 360px;
     @include tablet{
         height: 581px;
     }
+}
+.popular__middle-content-title{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: $footer-bkg;
+}
+.popular__middle-content-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-gray-op;
 }
 .popular__list-item-wrp{
     position: relative;
@@ -29,7 +48,7 @@
     position: absolute;
     opacity: 0;
 }
-.list-item__button{
+.popular__list-item-button{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -59,7 +78,7 @@
     cursor: pointer;
     background-color: $extra-pink;
 }
-.list-item__header{
+.popular__list-item-header{
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -69,14 +88,14 @@
     text-transform: uppercase;
     padding:25px 0 0 18px;
 }
-.list-item__text{
+.popular__list-item-text{
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: $dark-gray-op;
     padding: 12px 28px 0 18px;
 }
-.list-item__price{
+.popular__list-item-price{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
