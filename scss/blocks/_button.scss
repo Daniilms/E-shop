@@ -70,7 +70,7 @@
     padding-left: 130px;
     padding-right: 24px;
 }
-.cart__main-link{
+.cart__link{
     display: flex;
     justify-content: space-between;
     margin: 72px 0 0 0;
@@ -93,6 +93,12 @@
     color: $black-bkg;
     padding: 16px 40px;
     text-transform: uppercase;
+    @include mobile{
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        padding: 9px 17px;
+    }
 }
 .cart__main-form-button{
     margin: 24px 0 0 0;

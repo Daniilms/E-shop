@@ -362,7 +362,7 @@ body {
   padding-right: 24px;
 }
 
-.cart__main-link {
+.cart__link {
   display: flex;
   justify-content: space-between;
   margin: 72px 0 0 0;
@@ -388,6 +388,15 @@ body {
   color: #222222;
   padding: 16px 40px;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .cart__button-text {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    padding: 9px 17px;
+  }
 }
 
 .cart__main-form-button {
@@ -723,7 +732,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  .cart {
+  .cart__icon {
     display: none;
   }
 }
@@ -1228,19 +1237,37 @@ body {
   }
 }
 
-.cart__main {
+.cart {
   display: flex;
   margin-bottom: 130px;
   justify-content: space-between;
 }
 
-.cart__main-card {
+@media (max-width: 1599px) {
+  .cart {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .cart__content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .cart__svg {
+    display: none;
+  }
+}
+
+.cart__card {
   display: flex;
   flex-direction: column;
   margin-top: 96px;
 }
 
-.main-card__item {
+.cart__item {
   display: flex;
   position: relative;
   background-color: #ffffff;
@@ -1250,27 +1277,47 @@ body {
   filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
 }
 
-.main-card__item:first-child {
+@media (max-width: 767px) {
+  .cart__item {
+    width: 95%;
+    height: 188px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cart__img {
+    width: 40%;
+  }
+}
+
+.cart__item:first-child {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
 }
 
-.main-card__item-text {
+.cart__text {
   display: flex;
   flex-direction: column;
 }
 
-.cart__main-title {
+.cart__title {
   color: #222222;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   margin: 22px 0 0 31px;
-  width: 262px;
 }
 
-.cart__main-text {
+@media (max-width: 767px) {
+  .cart__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.cart__text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -1278,7 +1325,15 @@ body {
   padding: 6px 0 0 31px;
 }
 
-.main-card__item-svg {
+@media (max-width: 767px) {
+  .cart__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.cart__svg {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -1286,11 +1341,11 @@ body {
   top: 29px;
 }
 
-.cart__main-text:first-child {
+.cart__text:first-child {
   margin: 42px 0 0 0;
 }
 
-.main__card-price {
+.cart__price {
   color: #F16D7F;
 }
 
