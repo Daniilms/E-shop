@@ -109,7 +109,7 @@
                 <div class="cart__content">
                     <h1 class="cart__title">mango  people  t-shirt</h1>
                     <img class="cart__svg" src="./img/close_button.svg">
-                    <p class="cart__text">Price:<span class="main__card-price">$300</span></p>
+                    <p class="cart__text">Price:<span class="cart__price">$300</span></p>
                     <p class="cart__text">Color: Red</p>
                     <p class="cart__text">Size: Xl	</p>
                     <p class="cart__text">Quantity:</p>
@@ -120,7 +120,7 @@
                 <div class="cart__content">
                     <h1 class="cart__title">mango  people  t-shirt</h1>
                     <img class="cart__svg" src="./img/close_button.svg">
-                    <p class="cart__text">Price:<span class="main__card-price">$300</span></p>
+                    <p class="cart__text">Price:<span class="cart__price">$300</span></p>
                     <p class="cart__text">Color: Red</p>
                     <p class="cart__text">Size: Xl	</p>
                     <p class="cart__text">Quantity:</p>
@@ -136,19 +136,30 @@
             </div>
         </div>
         <fieldset class="cart__main-form">
-            <label class="cart__main-form-group">
-                <h1 class="cart__main-form-title"> shipping adress</h1>
-                <input class="cart__main-form-input input" placeholder="Bangladesh">
-            </label>
-            <label class="cart__main-form-group">
-                <input class="cart__main-form-input input" placeholder="State">
-            </label>
-            <label class="cart__main-form-group">
-                <input class="cart__main-form-input input" placeholder="Postcode / Zip">
-            </label>
-            <a href="#" class="cart__main-form-button">
-                <p class="cart__main-form-text">get a quote</p>
-            </a>
+            <div class="cart__main-form-wrapper">
+                <label class="cart__main-form-group">
+                    <h1 class="cart__main-form-title"> shipping adress</h1>
+                    <input class="cart__main-form-input input" placeholder="Bangladesh">
+                </label>
+                <label class="cart__main-form-group">
+                    <input class="cart__main-form-input input" placeholder="State">
+                </label>
+                <label class="cart__main-form-group">
+                    <input class="cart__main-form-input input" placeholder="Postcode / Zip">
+                </label>
+                <a href="#" class="cart__main-form-button">
+                    <p class="cart__main-form-text">get a quote</p>
+                </a>
+            </div>
+            <div class="cart__total">
+                <div class="cart__total-headers">
+                    <h1 class="cart__total-title">sub total         $900</h1>
+                    <h2 class="cart__total-title-big">grand total      <span class="cart__total-title-red">$900</span></h2>
+                </div>
+                <a href="#" class="cart__total-link">
+                    <p class="cart__total-link-text">proceed to checkout</p>
+                </a>
+            </div>
         </fieldset>
     </section>
 </main>
