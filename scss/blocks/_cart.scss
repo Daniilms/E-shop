@@ -1,14 +1,27 @@
-.cart__main{
+.cart{
     display: flex;
     margin-bottom: 130px;
     justify-content: space-between;
+    @include tablet{
+        flex-direction: column;
+    }
 }
-.cart__main-card{
+.cart__content{
+    @include mobile {
+        width: 60%;
+    }
+}
+.cart__svg{
+    @include mobile {
+        display: none;
+    }
+} 
+.cart__card{
     display: flex;
     flex-direction: column;
     margin-top: 96px;
 }
-.main-card__item{
+.cart__item{
     display: flex;
     position: relative;
     background-color: $white-bkg;
@@ -16,42 +29,60 @@
     height: 306px; 
     margin: 40px 0 0 0;
     filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    @include mobile {
+        width: 95%;
+        height: 188px;
+    }
 }
-.main-card__item:first-child{
+.cart__img{
+    @include mobile {
+        width: 40%;
+    }
+}
+.cart__item:first-child{
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
-.main-card__item-text{
+.cart__text{
     display: flex;
     flex-direction: column;
 }
-.cart__main-title{
+.cart__title{
     color: $title-color;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     margin: 22px 0 0 31px;
-    width: 262px;
+    @include mobile {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
-.cart__main-text{
+.cart__text{
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     color: $text-color;
     padding: 6px 0 0 31px;
+    @include mobile {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
-.main-card__item-svg{
+.cart__svg{
     width:18px;
     height:18px;
     position: absolute;
     right: 24px;
     top: 29px;
 }
-.cart__main-text:first-child{
+.cart__text:first-child{
     margin: 42px 0 0 0;
 }
-.main__card-price{
+.cart__price{
     color: $extra-pink;
 }
 .cart__main-form{

@@ -10,11 +10,11 @@
         background-size: cover;
     }
 }
-.footer__begin-form-input{
+.footer__form-input{
     display: flex;
     margin:32px 0 0 0;
 }
-.footer__begin-form-input-email{
+.footer__form-input-email{
     display: flex;
     align-items: center;
     background: $gray-op;
@@ -35,13 +35,13 @@
         margin-left: 0;
     }
 }
-.begin__form-input:hover,
-.begin__form-input:focus,
-.begin__form-input:active{
+.footer__form-input:hover,
+.footer__form-input:focus,
+.footer__form-input:active{
     color: $extra-pink;
     opacity: 0.7;
 }
-.footer__begin-form-button{
+.footer__form-button{
     background: $extra-pink;
     width: 100px;
     height: 50px;
@@ -69,7 +69,7 @@
         margin-top: 53px;
     }
 }
-.begin-description__text{
+.footer__begin-text{
     min-width: 359px;
     padding:30px 0 0 0;
     font-weight: 400;
@@ -83,7 +83,7 @@
     }
 
 }
-.footer__begin-form{
+.footer__form{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -95,7 +95,7 @@
         margin-bottom: 109px;
     }
 }
-.begin-form__footer{
+.footer__form-title{
     font-weight: 700;
     font-size: 24px;
     line-height: 167.2%;
@@ -103,7 +103,7 @@
     color: $footer-bkg;
     text-transform: uppercase;
 }
-.begin-text__footer{
+.footer__form-text{
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
@@ -127,7 +127,7 @@
         align-items: center;
     }
 }
-.footer__end-link{
+.footer__end-group{
     display: flex;
     margin:0 230px 0 0;
     @include tablet{
@@ -151,18 +151,18 @@
     }
 
 }
-.link-logo__img{
+.footer__end-img{
     padding: 0 7px 0 0;
     fill: #F18B99;
 }
-.end-link__logo:hover .logo__img-path,
-.end-link__logo:focus .logo__img-path {
+.footer__end-logo:hover .footer__end-path,
+.footer__end-logo:focus .footer__end-path {
     fill: #F16D7F;
     cursor: pointer;
     transition: 0.2s;
 }
-.end-link__logo:hover .link-logo__img,
-.end-link__logo:focus .logo__img-path {
+.footer__end-logo:hover .footer__end-img,
+.footer__end-logo:focus .footer__end-path {
     fill: #0d9ddb;
     cursor: pointer;
     transition: 0.2s;
