@@ -106,15 +106,26 @@
     display: flex;
     align-items: center;
     margin-top: 51px;
-    width: 72%;
     @include tablet{
-        width: 95%;
+        width: 736px;
+    }
+    @include mobile {
+        width: 359px;
+    }
+}
+.popular__svg {
+    display: none;
+    @include mobile{
+        display: block;
     }
 }
 .popular__catalog-dropdowns{
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mobile{
+        margin-left: 61px;
+    }
 }
 .popular__catalog-title{
     font-weight: 600;
@@ -122,11 +133,17 @@
     line-height: 17px;
     color: $black;
     text-transform: uppercase;
+    @include mobile{
+        display: none;
+    }
 }
 .popular__catalog-title::after{
     content: url(../img/filter.svg);
     padding-left: 11px;
     margin-right: 400px;
+    @include tablet {
+        display: flex;
+    }
 }
 .popular__catalog-filter{
     display: flex;

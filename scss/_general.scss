@@ -9,6 +9,10 @@ body {
     max-width: 1140px;
     margin: 0 auto;
 }
+.container_high_res {
+    max-width: 92%;
+    margin: 0 auto;
+}
 .visually-hidden{
     position: absolute;
     white-space: nowrap;
@@ -30,4 +34,13 @@ body {
     .container{
         width: 92%;
     }
+}
+@media(min-width: 1601px){
+    .container.header__wrp{
+        width: 92%;
+        max-width: 3000px;
+    }
+}
+.shown {
+    display: none;
 }
